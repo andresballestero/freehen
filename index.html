@@ -11,18 +11,136 @@
 <body>
 
     <div class="rectangle-9-copy-2"> 
-        <div class="Granja-Maria">
-            Granja María 
+                
+        <div class="rectangle-9a">
+            <img src="images/GrayEggs.jpg">
+
+            <div class="Granja-Maria">
+                Granja María &#160
+            </div>
             <div class="Gallinas-felices">
                 Gallinas felices
-
             </div>
+           
+    
         </div>
-        
+                
+    </div>
+
+    <hr>
+
+    <div class="titulo-ppal">
+        <h1>ADMINISTRADOR DE CLIENTES Y VENTAS</h1>
+    </div>
+
+    <hr>
+
+    <div class="titulo-formulario">
+        <h2>DATOS DE LA VENTA</h2>
+    </div> <br><br>
+
+    <div class="contenedor-formulario-venta">
+        <div class="hijo-formulario-venta">
+        <table >
+            <tr>
+            <td>
+                <div class="labels-form"></div>
+                <label for="fecha" > Fecha:  </label>
+                <div class="boxes-form"></div>
+                <input type="date" id="fecha" name="fecha" placeholder="Seleccione la fecha" required><br><br>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td>
+                <div class="labels-form">
+                <label for="cantidad" > Cantidad:  </label>
+                </div>
+                <div class="boxes-form">
+                <input type="number" id="cantidad" name="cantidad" placeholder="Ingrese la cantidad" required><br><br>
+                </div>
+            </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="labels-form"></div>
+                    <label for="cliente" > Cliente:  </label>
+                    <div class="boxes-form">
+                    <select name="cliente" id="cliente">
+                        <option value="1" selected>Seleccione el cliente</option>
+                        <option value="2">Armando Espinosa</option>
+                        <option value="3">Andrés Ballesteros</option>
+                        <option value="4">Crear nuevo cliente</option>
+                    </select> <br><br>
+                    </div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <div class="labels-form"></div>
+                    <label for="valor-unitario" > Valor unitario:  </label>
+                    <div class="boxes-form"></div>
+                    <input type="number" id="valor unitario" name="valor unitario" placeholder="Ingrese el valor unitario" required><br><br>
+
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="labels-form"></div>
+                    <label for="producto" > Producto:  </label>
+                    <div class="boxes-form"></div>
+                    <select name="Producto" id="Producto">
+                        <option value="1" selected>Huevos</option>
+                        <option value="2">Gallinas</option>
+                    </select> <br><br>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <div class="boxes-form"></div>
+                    <label for="valor-total" > Valor total:  </label>
+                    <div class="boxes-form"></div>
+                    <input type="number" id="valor total" name="valor total" placeholder="Aquí verá el valor total" ><br><br>
+
+
+                </td>
+            </tr>
+
+        <table>
+        </div>
+    </div>
+    
+    <div class="contenedor-buttons-form">
+        <div class="hijo-contenedor-buttons-form">
+            <table>
+                <td>
+                    <div class="button-crear">
+                        <p><button>Crear</button></p>
+                    </div>
+                </td>
+                <td></td>
+
+                <td>
+                    <div class="button-buscar">
+                        <p><button>Buscar</button></p>
+                    </div>
+                </td>
+
+            </table>
+        </div>
         
     </div>
 
-    
-    
+    <nav>
+        <a href="#" class="nav-enlace">Inicio</a>
+    </nav>
 </body>
 </html>
