@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Granja Maria</title>
     <link rel="icon" href="images/favicon.jpg" type="image/jpg" />
-    <link rel="stylesheet" href="CSS/estilos.css"/>
+    <link rel="stylesheet" href="CSS/estilos.css" />
+    <scrip src="JS/ficheros.js">
+        </script>
 </head>
+
 <body>
 
-    <div class="rectangle-9-copy-2"> 
-                
+    <div class="rectangle-9-copy-2">
+
         <div class="rectangle-9a">
             <img src="images/GrayEggs.jpg">
 
@@ -21,10 +25,10 @@
             <div class="Gallinas-felices">
                 Gallinas felices
             </div>
-           
-    
+
+
         </div>
-                
+
     </div>
 
     <hr>
@@ -39,85 +43,88 @@
         <h2>DATOS DE LA VENTA</h2>
     </div> <br><br>
 
-    <div class="contenedor-formulario-venta">
+    <form class="contenedor-formulario-venta">
         <div class="hijo-formulario-venta">
-        <table >
-            <tr>
-            <td>
-                <div class="labels-form"></div>
-                <label for="fecha" > Fecha:  </label>
-                <div class="boxes-form"></div>
-                <input type="date" id="fecha" name="fecha" placeholder="Seleccione la fecha" required><br><br>
-            </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <table>
+                <tr>
+                    <td>
+                        <div class="labels-form"></div>
+                        <label for="fecha"> Fecha: </label>
+                        <div class="boxes-form"></div>
+                        <input type="date" id="fecha" name="fecha" placeholder="Seleccione la fecha" required><br><br>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
 
-            <td>
-                <div class="labels-form">
-                <label for="cantidad" > Cantidad:  </label>
-                </div>
-                <div class="boxes-form">
-                <input type="number" id="cantidad" name="cantidad" placeholder="Ingrese la cantidad" required><br><br>
-                </div>
-            </td>
+                    <td>
+                        <div class="labels-form">
+                            <label for="cantidad"> Cantidad: </label>
+                        </div>
+                        <div class="boxes-form">
+                            <input type="number" id="cantidad" name="cantidad" placeholder="Ingrese la cantidad"
+                                required><br><br>
+                        </div>
+                    </td>
 
-            </tr>
-            <tr>
-                <td>
-                    <div class="labels-form"></div>
-                    <label for="cliente" > Cliente:  </label>
-                    <div class="boxes-form">
-                    <select name="cliente" id="cliente">
-                        <option value="1" selected>Seleccione el cliente</option>
-                        <option value="2">Armando Espinosa</option>
-                        <option value="3">Andrés Ballesteros</option>
-                        <option value="4">Crear nuevo cliente</option>
-                    </select> <br><br>
-                    </div>
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                    <div class="labels-form"></div>
-                    <label for="valor-unitario" > Valor unitario:  </label>
-                    <div class="boxes-form"></div>
-                    <input type="number" id="valor unitario" name="valor unitario" placeholder="Ingrese el valor unitario" required><br><br>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="labels-form"></div>
+                        <label for="cliente"> Cliente: </label>
+                        <div class="boxes-form">
+                            <select name="cliente" id="cliente">
+                                <option value="1" selected>Seleccione el cliente</option>
+                                <option value="2">Armando Espinosa</option>
+                                <option value="3">Andrés Ballesteros</option>
+                                <option value="4">Crear nuevo cliente</option>
+                            </select> <br><br>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <div class="labels-form"></div>
+                        <label for="valor-unitario"> Valor unitario: </label>
+                        <div class="boxes-form"></div>
+                        <input type="number" id="valor unitario" name="valor unitario"
+                            placeholder="Ingrese el valor unitario" required><br><br>
 
-                </td>
+                    </td>
 
-            </tr>
-            <tr>
-                <td>
-                    <div class="labels-form"></div>
-                    <label for="producto" > Producto:  </label>
-                    <div class="boxes-form"></div>
-                    <select name="Producto" id="Producto">
-                        <option value="1" selected>Huevos</option>
-                        <option value="2">Gallinas</option>
-                    </select> <br><br>
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                    <div class="boxes-form"></div>
-                    <label for="valor-total" > Valor total:  </label>
-                    <div class="boxes-form"></div>
-                    <input type="number" id="valor total" name="valor total" placeholder="Aquí verá el valor total" ><br><br>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="labels-form"></div>
+                        <label for="producto"> Producto: </label>
+                        <div class="boxes-form"></div>
+                        <select name="Producto" id="Producto">
+                            <option value="1" selected>Huevos</option>
+                            <option value="2">Gallinas</option>
+                        </select> <br><br>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <div class="boxes-form"></div>
+                        <label for="valor-total"> Valor total: </label>
+                        <div class="boxes-form"></div>
+                        <input type="number" id="valor total" name="valor total"
+                            placeholder="Aquí verá el valor total"><br><br>
 
 
-                </td>
-            </tr>
+                    </td>
+                </tr>
 
-        <table>
+                <table>
         </div>
-    </div>
-    
+    </form>
+
     <div class="contenedor-buttons-form">
         <div class="hijo-contenedor-buttons-form">
             <table>
@@ -135,7 +142,7 @@
                 </td>
 
             </table>
-        </div>        
+        </div>
     </div>
 
     <nav>
@@ -143,4 +150,5 @@
     </nav>
 
 </body>
+
 </html>
