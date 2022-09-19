@@ -8,8 +8,7 @@
     <title>Granja Maria</title>
     <link rel="icon" href="images/favicon.jpg" type="image/jpg" />
     <link rel="stylesheet" href="CSS/estilos.css" />
-    <scrip src="JS/ficheros.js">
-        </script>
+    <script src="JS/ficheros.js"></script>
 </head>
 
 <body>
@@ -75,10 +74,10 @@
                         <label for="cliente"> Cliente: </label>
                         <div class="boxes-form">
                             <select name="cliente" id="cliente">
-                                <option value="1" selected>Seleccione el cliente</option>
-                                <option value="2">Armando Espinosa</option>
-                                <option value="3">Andrés Ballesteros</option>
-                                <option value="4">Crear nuevo cliente</option>
+                                <option value="Seleccione el cliente" selected>Seleccione el cliente</option>
+                                <option value="Armando Espinosa">Armando Espinosa</option>
+                                <option value="Andrés Ballesteros">Andrés Ballesteros</option>
+                                <option value="Crear nuevo cliente">Crear nuevo cliente</option>
                             </select> <br><br>
                         </div>
                     </td>
@@ -90,7 +89,7 @@
                         <div class="labels-form"></div>
                         <label for="valor-unitario"> Valor unitario: </label>
                         <div class="boxes-form"></div>
-                        <input type="number" id="valor unitario" name="valor unitario"
+                        <input type="number" id="valor-unitario" name="valor unitario"
                             placeholder="Ingrese el valor unitario" required><br><br>
 
                     </td>
@@ -102,48 +101,51 @@
                         <label for="producto"> Producto: </label>
                         <div class="boxes-form"></div>
                         <select name="Producto" id="Producto">
-                            <option value="1" selected>Huevos</option>
-                            <option value="2">Gallinas</option>
+                            <option value="Huevos" selected>Huevos</option>
+                            <option value="Gallinas">Gallinas</option>
                         </select> <br><br>
                     </td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td>
+                    <!-- <td>
                         <div class="boxes-form"></div>
                         <label for="valor-total"> Valor total: </label>
                         <div class="boxes-form"></div>
-                        <input type="number" id="valor total" name="valor total"
+                        <input type="number" id="valor-total" name="valor total"
                             placeholder="Aquí verá el valor total"><br><br>
 
 
-                    </td>
+                    </td> -->
                 </tr>
 
                 <table>
         </div>
     </form>
 
+
+
     <div class="contenedor-buttons-form">
         <div class="hijo-contenedor-buttons-form">
             <table>
                 <td>
                     <div class="button-crear">
-                        <p><button>Crear</button></p>
+                        <p><button type="button" onclick="getData()">Crear</button></p>
                     </div>
                 </td>
                 <td></td>
 
                 <td>
                     <div class="button-buscar">
-                        <p><button>Buscar</button></p>
+                        <button>Buscar</button>
                     </div>
                 </td>
 
             </table>
         </div>
     </div>
+
 
     <nav>
         <a href="#" class="nav-enlace">Inicio</a>
