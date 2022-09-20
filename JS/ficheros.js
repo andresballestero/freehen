@@ -6,6 +6,6 @@ var getData = function () {
     var producto = document.getElementById("Producto").value;
     var valorTotal = cantidad * ValorUnitario;
     //console.log(fecha + " " + cantidad + " " + ValorUnitario + " " + cliente + " " + producto + " " + valorTotal)
-    window.alert("Venta Creada con Exito, Valor Total: $" + valorTotal);
-
+    window.alert("Venta Creada con Exito, Valor Total: $" + valorTotal + " para " + cliente);
 }
+

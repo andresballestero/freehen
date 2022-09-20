@@ -75,9 +75,19 @@
                         <div class="boxes-form">
                             <select name="cliente" id="cliente">
                                 <option value="Seleccione el cliente" selected>Seleccione el cliente</option>
-                                <option value="Armando Espinosa">Armando Espinosa</option>
-                                <option value="Andrés Ballesteros">Andrés Ballesteros</option>
+                                <!-- <option value="Armando Espinosa">Armando Espinosa</option>
+                                <option value="Andrés Ballesteros">Andrés Ballesteros</option> -->
+
+
+                                <script type="text/javascript">
+                                    var ListaClientes = ["Armando Espinosa 1", "Andrés Ballesteros", "Angela Chicaiza"];
+                                    for (let i = 0; i < ListaClientes.length; i++) {
+                                        nombre = ListaClientes[i];
+                                        document.write("<option>" + nombre + "</option>");
+                                    }
+                                </script>
                                 <option value="Crear nuevo cliente">Crear nuevo cliente</option>
+
                             </select> <br><br>
                         </div>
                     </td>
@@ -99,11 +109,12 @@
                     <td>
                         <div class="labels-form"></div>
                         <label for="producto"> Producto: </label>
-                        <div class="boxes-form"></div>
-                        <select name="Producto" id="Producto">
-                            <option value="Huevos" selected>Huevos</option>
-                            <option value="Gallinas">Gallinas</option>
-                        </select> <br><br>
+                        <div class="boxes-form">
+                            </doiv>
+                            <select name="Producto" id="Producto">
+                                <option value="Huevos" selected>Huevos</option>
+                                <option value="Gallinas">Gallinas</option>
+                            </select> <br><br>
                     </td>
                     <td></td>
                     <td></td>
