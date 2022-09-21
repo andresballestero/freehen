@@ -32,6 +32,8 @@ body{
     text-decoration: none;
   }
 
+
+
   .nav-menu2{
    
     list-style: none;
@@ -39,7 +41,9 @@ body{
     padding-left: 8px;
     padding-top: 10px;
 
+
   }
+
 
   .nav-menu-item-p2{
     background:#606060;
@@ -57,7 +61,7 @@ body{
     background: #2b2b2d;
   }
     
-    .img2{
+   3.img2{
         width: 65px;
 	    height: 70px;  
         padding-top: 10px;
@@ -90,7 +94,8 @@ body{
     padding-top: 13px;
   }
 
-.titulo-ppal{
+
+.titulo-ppal {
     width: auto;
 	height: 40px;
 	color: #606060;
@@ -102,9 +107,9 @@ body{
 	text-align: center;
     padding-top: 30px;
     padding-bottom: 80px;
-}
+    }
 
-.titulo-formulario{
+.titulo-formulario {
     width: auto;
 	height: 26px;
 	color: #606060;
@@ -118,24 +123,24 @@ body{
     padding-bottom: 40px;
 }
 
-.Rectangle-formulario-crear-venta{
-    
+.Rectangle-formulario-crear-venta {
 
-    display:inline-table;
+
+    display: inline-table;
     justify-content: baseline;
     border-color: #ecb912;
-	border-width: 1px;
-	border-style: solid;
+    border-width: 1px;
+    border-style: solid;
 
-	
-    
-} 
 
-.labels-form{
+
+}
+
+.labels-form {
     text-align: left;
 }
 
-.boxes-form{
+.boxes-form {
     text-align: justify;
 }
 
@@ -143,9 +148,9 @@ body{
 
 .contenedor-formulario-venta {
     position: relative;
-  }
-  
-  .hijo-formulario-venta {
+}
+
+.hijo-formulario-venta {
     width: 400px;
     height: 400px;
     background-color: #ffffff;
@@ -155,28 +160,113 @@ body{
     left: 50%;
     margin: -25px 0 0 -175px;
     /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo*/
-  }
+}
 
-  .button-crear{
+.button-crear {
     text-align: right;
-  }
+}
 
-  button{
+button {
     width: 60px;
     height: 25px;
-  }
+}
+
 
 
  /*  .nav-enlace{
+
     display: inline-block;
     background: #e4e0dd;
     color: black;
     padding: 10px 30px;
     text-decoration: none;
-  }
+}
 
-  .nav-enlace:hover{
+.nav-enlace:hover {
     background: #4d4d50;
+
+}
+
+/* ------------------------------------------------------------*/
+/*POPUP*/
+.overlay {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+.popup {
+    background: #F8F8F8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    /* transition: .3s ease all;
+    transform: scale(0.7);
+    opacity: 0; */
+}
+
+.popup .btn-cerrar-popup {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    transition: .3s ease all;
+    color: #BBBBBB;
+}
+
+.popup .btn-cerrar-popup:hover {
+    color: #000;
+}
+
+.popup h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    /* opacity: 0; */
+}
+
+.popup form .contenedor-inputs input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 52px;
+    text-align: center;
+    border: 1px solid #BBBBBB;
+}
+
+.popup form .btn-submit {
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: #5E7DE3;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.popup form .btn-submit:hover {
+    background: rgba(94, 125, 227, .9);
+}
+
   }
  */
   /* ---------------------- Hasta aquí página form. Inicia Página ppal --------------- */

@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Granja Maria</title>
     <link rel="icon" href="images/favicon.jpg" type="image/jpg" />
+
+    <script src="JS/ficheros.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" href="CSS/estilos.css"/>
     <script src="https://kit.fontawesome.com/1aced60473.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
 </head>
+
 <body>
+
 
     <header class="header2">
         
@@ -19,6 +26,7 @@
         <p class="granja-maria" >GRANJA MARÍA</p>
         <p class="gallinas-felices">Gallinas felices</p>
         
+
 
         <nav class="nav2">
             
@@ -48,103 +56,144 @@
 
     <form class="contenedor-formulario-venta">
         <div class="hijo-formulario-venta">
-        <table >
-            <tr>
-            <td>
-                <div class="labels-form"></div>
-                <label for="fecha" > Fecha:  </label>
-                <div class="boxes-form"></div>
-                <input type="date" id="fecha" name="fecha" placeholder="Seleccione la fecha" required><br><br>
-            </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <table>
+                <tr>
+                    <td>
+                        <div class="labels-form"></div>
+                        <label for="fecha"> Fecha: </label>
+                        <div class="boxes-form"></div>
+                        <input type="date" id="fecha" name="fecha" placeholder="Seleccione la fecha" required><br><br>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
 
-            <td>
-                <div class="labels-form">
-                <label for="cantidad" > Cantidad:  </label>
-                </div>
-                <div class="boxes-form">
-                <input type="number" id="cantidad" name="cantidad" placeholder="Ingrese la cantidad" required><br><br>
-                </div>
-            </td>
+                    <td>
+                        <div class="labels-form">
+                            <label for="cantidad"> Cantidad: </label>
+                        </div>
+                        <div class="boxes-form">
+                            <input type="number" id="cantidad" name="cantidad" placeholder="Ingrese la cantidad"
+                                required><br><br>
+                        </div>
+                    </td>
 
-            </tr>
-            <tr>
-                <td>
-                    <div class="labels-form"></div>
-                    <label for="cliente" > Cliente:  </label>
-                    <div class="boxes-form">
-                    <select name="cliente" id="cliente">
-                        <option value="1" selected>Seleccione el cliente</option>
-                        <option value="2">Armando Espinosa</option>
-                        <option value="3">Andrés Ballesteros</option>
-                        <option value="4">Crear nuevo cliente</option>
-                    </select> <br><br>
-                    </div>
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                    <div class="labels-form"></div>
-                    <label for="valor-unitario" > Valor unitario:  </label>
-                    <div class="boxes-form"></div>
-                    <input type="number" id="valor unitario" name="valor unitario" placeholder="Ingrese el valor unitario" required><br><br>
-
-                </td>
-
-            </tr>
-            <tr>
-                <td>
-                    <div class="labels-form"></div>
-                    <label for="producto" > Producto:  </label>
-                    <div class="boxes-form"></div>
-                    <select name="Producto" id="Producto">
-                        <option value="1" selected>Huevos</option>
-                        <option value="2">Gallinas</option>
-                    </select> <br><br>
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                    <div class="boxes-form"></div>
-                    <label for="valor-total" > Valor total:  </label>
-                    <div class="boxes-form"></div>
-                    <input type="number" id="valor total" name="valor total" placeholder="Aquí verá el valor total" ><br><br>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="labels-form"></div>
+                        <label for="cliente"> Cliente: </label>
+                        <div class="boxes-form">
+                            <select name="cliente" id="cliente">
+                                <option value="Seleccione el cliente" selected>Seleccione el cliente</option>
+                                <!-- <option value="Armando Espinosa">Armando Espinosa</option>
+                                <option value="Andrés Ballesteros">Andrés Ballesteros</option> -->
 
 
-                </td>
-            </tr>
+                                <script type="text/javascript">
+                                    var ListaClientes = ["Armando Espinosa 1", "Andrés Ballesteros", "Angela Chicaiza"];
+                                    for (let i = 0; i < ListaClientes.length; i++) {
+                                        nombre = ListaClientes[i];
+                                        document.write("<option>" + nombre + "</option>");
+                                    }
+                                </script>
+                                <option value="Crear nuevo cliente">Crear nuevo cliente</option>
 
-        <table>
+                            </select> <br><br>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <div class="labels-form"></div>
+                        <label for="valor-unitario"> Valor unitario: </label>
+                        <div class="boxes-form"></div>
+                        <input type="number" id="valor-unitario" name="valor unitario"
+                            placeholder="Ingrese el valor unitario" required><br><br>
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="labels-form"></div>
+                        <label for="producto"> Producto: </label>
+                        <div class="boxes-form">
+                            </doiv>
+                            <select name="Producto" id="Producto">
+                                <option value="Huevos" selected>Huevos</option>
+                                <option value="Gallinas">Gallinas</option>
+                            </select> <br><br>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="boxes-form"></div>
+                        <label for="valor-total"> Valor total: </label>
+                        <div class="boxes-form"></div>
+                        <input type="number" id="valor-total" name="valor total"
+                            placeholder="Aquí verá el valor total"><br><br>
+
+
+                    </td> -->
+                </tr>
+
+                <table>
         </div>
     </form>
-    
+
+
+
     <div class="contenedor-buttons-form">
         <div class="hijo-contenedor-buttons-form">
             <table>
                 <td>
-                    <div class="button-crear">
-                        <p><button>Crear</button></p>
+                    <div class="button-crear" id="button-crear">
+                        <p><button type="button" onclick="getData()">Crear</button></p>
+                        <!-- <p><button id="Crear" class="button">Crear</button></p> -->
                     </div>
                 </td>
                 <td></td>
 
                 <td>
-                    <div class="button-buscar">
-                        <p><button>Buscar</button></p>
+                    <div class="button-buscar" id="button-buscar">
+                        <button>Buscar</button>
                     </div>
                 </td>
 
             </table>
-        </div>        
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>DATOS DEL CLIENTE</h3>
+            <form action="">
+                <div class="contenedor-inputs">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Celular">
+                </div>
+                <input type="submit" class="btn-submit" value="Crear Cliente">
+            </form>
+
+
+        </div>
+
     </div>
 
 
+
+    <nav>
+        <a href="#" class="nav-enlace">Inicio</a>
+    </nav>
+
+
 </body>
+
 </html>
