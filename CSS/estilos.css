@@ -114,7 +114,8 @@ body{
 	line-height: 1;
 	letter-spacing: 2px;
 	text-align: center;
-    padding-top: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .Rectangle-formulario-crear-venta{
@@ -166,7 +167,7 @@ body{
   }
 
 
-  .nav-enlace{
+ /*  .nav-enlace{
     display: inline-block;
     background: #e4e0dd;
     color: black;
@@ -177,7 +178,7 @@ body{
   .nav-enlace:hover{
     background: #4d4d50;
   }
-
+ */
   /* ---------------------- Hasta aquí página form. Inicia Página ppal --------------- */
 
   
