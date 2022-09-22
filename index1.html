@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,7 @@
         <script src="https://kit.fontawesome.com/1aced60473.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
         <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <script src="JS/ficheros.js"></script>
     </head>
 <body>
     <header class="header1">
@@ -19,10 +20,10 @@
             
             <ul class="nav-menu1">
                 <li class="nav-menu-item1">
-                    <a href="file:///C:/Users/Admin/Desktop/SOFTWARE%20DEVELOPMENT/GIT/Granja/index1.html" 
+                    <a href="index1.html" 
                        class="nav-menu-link nav-link"><i class="fa-solid fa-house"></i> &#160 Inicio</a></li>
                 <li class="nav-menu-item2">
-                    <a href="file:///C:/Users/Admin/Desktop/SOFTWARE%20DEVELOPMENT/GIT/Granja/index.html" 
+                    <a href="index.html" 
                        class="nav-menu-link nav-link"> <i class="fa-solid fa-file-circle-plus"></i> &#160 Admin.</a>
                 </li>
             </ul>
@@ -40,9 +41,24 @@
             </div>       
     </div>
 
-    <hr>
+    <hr class="line">
+
+    <div class="totales">
+            
+        <ul class="totales1">
+            <li class="totalventas"> &#160 TOTAL VENTAS: &#160
+                <script> totalv(totalventas); </script> &#160 
+                <i class="fa-solid fa-store"></i>
+            </li> 
+            <li class="totalingresos"> &#160 TOTAL INGRESOS:&#160 $
+                <script> totali(totalingresos); </script> &#160 
+                <i class="fa-solid fa-money-check-dollar"></i>
+            </li> 
+            
+        </ul>
+    </div>
     
-    <h2 class="titulo-torta">Tus productos</h2>
+<!--     <h2 class="titulo-torta">Tus productos</h2>
     <section class="container-torta">
         <div class="torta"></div>
         <div class="container-leyenda">
@@ -55,10 +71,27 @@
                 <p class="producto2">30% Gallinas</p>
             </span>
         </div>
-    </section>
+    </section> -->
+
+<!-- /* intento IG */ -->
+
+<!-- <div class="wrapper">
+    <div class="container-piechart">
+        <div class="tittle-piechart">
+            <h3> Tus productos </h3>
+        </div>
+        <div class="piechart-wrapper">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>  
+ -->
 
 
-    
 
 
 

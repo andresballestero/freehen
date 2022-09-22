@@ -72,6 +72,52 @@ body{
 
 
 
+  ul.totales1 li {
+    display: inline;
+    color:#606060;
+
+    list-style: none;
+    text-align: center;
+  }
+
+  .totales1 {
+    text-align: center;
+    padding-inline: 50px;
+    padding-top: 50px;
+
+  }
+
+  .totalventas {    
+    background-color: white;
+    font-size: 18px;
+    margin: 13px 13px;
+    border-style: solid;
+    border-color: #606060;
+    border-width: 1px;
+    padding: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    
+  }
+
+  .totalingresos {
+    background-color: white;
+    font-size: 18px;
+    margin: 13px 13px;
+    border-style: solid;
+    border-color: #606060;
+    border-width: 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+ 
+
+  }
+
+
+
+
 
 /*   .rectangle-ppal{
     width: auto;
@@ -118,6 +164,11 @@ body{
 }
 
 
+
+
+
+
+
 .titulo-torta{
     	color: #606060;
 	font-family: "Lato", sans-serif;
@@ -144,14 +195,14 @@ body{
     --color_gallinas: #3b5998;
 }
 
+/*
 .torta{
    	width: 300px;
 	height: 270px;
     	border-radius: 50%;
     	background-image: conic-gradient(var(--color_huevos)70%,
                                     var(--color_gallinas)30%);
-    /*box-shadow: 1px 1px 5px 1px rgb(70, 70, 70);*/
-}
+  }
 
 .leyenda-all{
     display: flex;
@@ -172,13 +223,30 @@ body{
     background-color: var(--color_gallinas);
 }
 
-
-
-
-
 .social{
     color: #fff;
     line-height: 1.5;
 }
+*/
+
+
+
+
+
+
+
+
+
+
+/* .container-piechart{
+
+  height: 100vh;
+}
+
+.piechart-wrapper{
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+} */
 
 
