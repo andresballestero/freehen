@@ -17,4 +17,5 @@ public class clienteData {
     private int id;
     private String nombreCliente;
     private String celularCliente;
+
 }

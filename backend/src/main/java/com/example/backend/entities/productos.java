@@ -35,7 +35,4 @@ public class productos {
     @Column(nullable = false, unique = false)
     private int cantidad;
 
-    // creo constructor vacío:
-    // public productos() {}
-
 }

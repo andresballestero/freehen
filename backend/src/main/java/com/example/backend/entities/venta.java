@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -30,7 +32,13 @@ public class venta {
     @Column(nullable = false, unique = false)
     private Date fecha;
 
-    @Column(nullable = false, unique = false)
-    private int precioTotal;
+    // @Column(nullable = false, unique = false)
+    // private int precioTotal;
+
+    @OneToOne
+    @JoinColumn(name = "productos.id")
+
+    // @Column(nullable = false, unique = false)
+    private productos productos;
 
 }
