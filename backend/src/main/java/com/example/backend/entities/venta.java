@@ -29,8 +29,4 @@ public class venta {
 
     @Column(nullable = false, unique = false)
     private Date fecha;
-
-    @Column(nullable = false, unique = false)
-    private int precioTotal;
-
 }
