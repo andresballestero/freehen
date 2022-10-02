@@ -2,12 +2,15 @@ package com.example.backend.entities;
 
 import java.sql.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
 import lombok.AllArgsConstructor;
@@ -32,13 +35,12 @@ public class venta {
     @Column(nullable = false, unique = false)
     private Date fecha;
 
-    // @Column(nullable = false, unique = false)
-    // private int precioTotal;
-
     @OneToOne
     @JoinColumn(name = "productos.id")
-
-    // @Column(nullable = false, unique = false)
     private productos productos;
+
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "cliente")
+    private cliente cliente;
 
 }

@@ -37,4 +37,8 @@ public class cliente {
     @Column(nullable = false, unique = false)
     private String celularCliente;
 
+    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
+    private List<cliente> cliente;
+    // getter and setter
+
 }
