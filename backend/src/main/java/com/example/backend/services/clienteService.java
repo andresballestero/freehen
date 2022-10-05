@@ -20,10 +20,10 @@ public class clienteService {
     private clienteConverter clienteConverter = new clienteConverter();
 
     // Servicio para registrar en la BD(en la cual se realiza la conversion de
-    // adentro hacia afuera)
+    // adentro hacia afuera
     public clienteData insert(clienteData cliente) {
         if (clienteRepository.existsById(cliente.getId()))
-            throw new ResponseStatusException(HttpStatus.CONFLICT, "Vacante existente)");
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "Cliente existente");
         return clienteConverter.toData(clienteRepository.save(clienteConverter.toEntity(cliente)));
     }
 
@@ -36,14 +36,14 @@ public class clienteService {
     public clienteData findById(int id) {
         Optional<cliente> cliente = clienteRepository.findById(id);
         if (cliente.isEmpty())
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Vacante no existe");
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente no existe");
         return clienteConverter.toData(cliente.get());
     }
 
     // Update Aplication
     public clienteData update(clienteData cliente) {
         if (!clienteRepository.existsById(cliente.getId()))
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Vacante no existe");
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente no existe");
         return clienteConverter.toData(clienteRepository.save(clienteConverter.toEntity(cliente)));
     }
 
@@ -51,7 +51,7 @@ public class clienteService {
     public clienteData DeleteById(int id) {
         Optional<cliente> cliente = clienteRepository.findById(id);
         if (cliente.isEmpty())
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Vacante no existe");
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente no existe");
         return clienteConverter.toData(cliente.get());
     }
 }

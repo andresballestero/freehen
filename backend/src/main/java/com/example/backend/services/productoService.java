@@ -52,7 +52,7 @@ public class productoService {
     public productosData DeleteById(int id) {
         Optional<productos> cliente = productosRepository.findById(id);
         if (cliente.isEmpty())
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Vacante no existe");
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Producto no existe");
         return productoConverter.toData(cliente.get());
     }
 
