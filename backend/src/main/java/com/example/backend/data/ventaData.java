@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import com.example.backend.entities.productos;
+import com.example.backend.entities.cliente;
 
 @Getter
 @Setter
@@ -19,6 +20,7 @@ import com.example.backend.entities.productos;
 public class ventaData {
     private int id;
     private Date fecha;
+    private cliente cliente;
     private productos productos;
 
 }
