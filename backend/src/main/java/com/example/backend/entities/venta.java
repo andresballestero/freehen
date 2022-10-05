@@ -1,7 +1,5 @@
 package com.example.backend.entities;
 
-import java.sql.Date;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -33,7 +31,7 @@ public class venta {
     private int id;
 
     @Column(nullable = false, unique = false)
-    private Date fecha;
+    private String fecha;
 
     @OneToOne
     @JoinColumn(name = "productos.id")
