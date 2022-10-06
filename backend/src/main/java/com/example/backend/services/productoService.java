@@ -53,6 +53,7 @@ public class productoService {
         Optional<productos> cliente = productosRepository.findById(id);
         if (cliente.isEmpty())
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Producto no existe");
+        productosRepository.deleteById(id);
         return productoConverter.toData(cliente.get());
     }
 

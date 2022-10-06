@@ -53,6 +53,7 @@ public class ventaService {
         Optional<venta> cliente = ventaRepository.findById(id);
         if (cliente.isEmpty())
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Venta no existe");
+        ventaRepository.deleteById(id);
         return ventaConverter.toData(cliente.get());
     }
 }

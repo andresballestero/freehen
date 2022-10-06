@@ -48,10 +48,11 @@ public class clienteService {
     }
 
     // Delete aplication
-    public clienteData DeleteById(int id) {
+    public clienteData deleteById(int id) {
         Optional<cliente> cliente = clienteRepository.findById(id);
         if (cliente.isEmpty())
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente no existe");
+        clienteRepository.deleteById(id);
         return clienteConverter.toData(cliente.get());
     }
 }
