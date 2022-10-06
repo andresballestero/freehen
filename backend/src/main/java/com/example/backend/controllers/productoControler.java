@@ -33,26 +33,31 @@ public class productoControler {
     }
 
     // metodo CONSULTAR
+
     @GetMapping
     public ResponseEntity<?> findAll() {
         return new ResponseEntity<>(productoService.findAll(), HttpStatus.OK);
     }
 
     // metodo CONSULTAR Id
-    @GetMapping("{id]")
+
+    @GetMapping("{id}")
     public ResponseEntity<?> findById(@PathVariable int id) {
         return new ResponseEntity<>(productoService.findById(id), HttpStatus.OK);
     }
 
     // metodo modificar
+
     @PutMapping
     public ResponseEntity<?> update(@RequestBody productosData productos) {
         return new ResponseEntity<>(productoService.update(productos), HttpStatus.OK);
     }
 
     // eliminar
-    @DeleteMapping("{id]")
+
+    @DeleteMapping("{id}")
     public ResponseEntity<?> deleteById(@PathVariable int id) {
         return new ResponseEntity<>(productoService.DeleteById(id), HttpStatus.OK);
     }
+
 }

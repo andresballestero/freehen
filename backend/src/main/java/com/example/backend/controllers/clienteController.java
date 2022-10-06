@@ -39,7 +39,7 @@ public class clienteController {
     }
 
     // metodo CONSULTAR Id
-    @GetMapping("{id]")
+    @GetMapping("{id}")
     public ResponseEntity<?> findById(@PathVariable int id) {
         return new ResponseEntity<>(clienteService.findById(id), HttpStatus.OK);
     }
@@ -51,7 +51,7 @@ public class clienteController {
     }
 
     // eliminar
-    @DeleteMapping("{id]")
+    @DeleteMapping("{id}")
     public ResponseEntity<?> deleteById(@PathVariable int id) {
         return new ResponseEntity<>(clienteService.deleteById(id), HttpStatus.OK);
     }
