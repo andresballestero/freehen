@@ -16,7 +16,6 @@ import com.example.backend.respositories.productosRepository;
 @Service
 public class productoService {
     @Autowired
-
     private productosRepository productosRepository;
     private productoConverter productoConverter = new productoConverter();
 
@@ -42,19 +41,20 @@ public class productoService {
     }
 
     // Update Aplication
-    public productosData update(productosData cliente) {
-        if (!productosRepository.existsById(cliente.getId()))
+    public productosData update(productosData productos) {
+        if (!productosRepository.existsById(productos.getId()))
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Producto no existe");
-        return productoConverter.toData(productosRepository.save(productoConverter.toEntity(cliente)));
+        return productoConverter.toData(productosRepository.save(productoConverter.toEntity(productos)));
     }
 
     // Delete aplication
     public productosData DeleteById(int id) {
-        Optional<productos> cliente = productosRepository.findById(id);
-        if (cliente.isEmpty())
+        Optional<productos> productos = productosRepository.findById(id);
+        if (productos.isEmpty())
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Producto no existe");
+        productosData productosData = productoConverter.toData(productos.get());
         productosRepository.deleteById(id);
-        return productoConverter.toData(cliente.get());
+        return productosData;
     }
 
 }

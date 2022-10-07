@@ -33,7 +33,7 @@ public class cliente {
     @Column(nullable = false, unique = true)
     private String nombreCliente;
 
-    @Column(nullable = false, unique = false)
+    @Column(nullable = false, unique = true)
     private String celularCliente;
 
     @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)

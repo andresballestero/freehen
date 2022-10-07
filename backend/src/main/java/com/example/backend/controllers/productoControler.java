@@ -50,7 +50,8 @@ public class productoControler {
 
     @PutMapping
     public ResponseEntity<?> update(@RequestBody productosData productos) {
-        return new ResponseEntity<>(productoService.update(productos), HttpStatus.OK);
+        return new ResponseEntity<>(productoService.update(productos),
+                HttpStatus.OK);
     }
 
     // eliminar

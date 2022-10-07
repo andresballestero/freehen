@@ -35,25 +35,26 @@ public class ventaService {
 
     // query aplication by Id
     public ventaData findById(int id) {
-        Optional<venta> productos = ventaRepository.findById(id);
-        if (productos.isEmpty())
+        Optional<venta> venta = ventaRepository.findById(id);
+        if (venta.isEmpty())
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Venta no existe");
-        return ventaConverter.toData(productos.get());
+        return ventaConverter.toData(venta.get());
     }
 
     // Update Aplication
-    public ventaData update(ventaData cliente) {
-        if (!ventaRepository.existsById(cliente.getId()))
+    public ventaData update(ventaData venta) {
+        if (!ventaRepository.existsById(venta.getId()))
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Venta no existe");
-        return ventaConverter.toData(ventaRepository.save(ventaConverter.toEntity(cliente)));
+        return ventaConverter.toData(ventaRepository.save(ventaConverter.toEntity(venta)));
     }
 
     // Delete aplication
     public ventaData DeleteById(int id) {
-        Optional<venta> cliente = ventaRepository.findById(id);
-        if (cliente.isEmpty())
+        Optional<venta> venta = ventaRepository.findById(id);
+        if (venta.isEmpty())
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Venta no existe");
         ventaRepository.deleteById(id);
-        return ventaConverter.toData(cliente.get());
+        ventaData ventaData = ventaConverter.toData(venta.get());
+        return ventaData;
     }
 }

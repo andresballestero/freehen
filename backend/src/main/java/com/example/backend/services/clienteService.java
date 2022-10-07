@@ -52,7 +52,8 @@ public class clienteService {
         Optional<cliente> cliente = clienteRepository.findById(id);
         if (cliente.isEmpty())
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente no existe");
+        clienteData clienteData = clienteConverter.toData(cliente.get());
         clienteRepository.deleteById(id);
-        return clienteConverter.toData(cliente.get());
+        return clienteData;
     }
 }

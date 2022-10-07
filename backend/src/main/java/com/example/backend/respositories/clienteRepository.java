@@ -7,4 +7,7 @@ import com.example.backend.entities.cliente;
 @Repository
 public interface clienteRepository extends JpaRepository<cliente, Integer> {
 
+    public boolean existsBynombreCliente(String nombreCliente);
+
+    public boolean existsBycelularCliente(String celularCliente);
 }
