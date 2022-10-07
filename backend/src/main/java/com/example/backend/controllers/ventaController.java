@@ -46,8 +46,8 @@ public class ventaController {
 
     // metodo modificar
     @PutMapping
-    public ResponseEntity<?> update(@RequestBody ventaData productos) {
-        return new ResponseEntity<>(ventaService.update(productos), HttpStatus.OK);
+    public ResponseEntity<?> update(@RequestBody ventaData venta) {
+        return new ResponseEntity<>(ventaService.update(venta), HttpStatus.OK);
     }
 
     // eliminar
