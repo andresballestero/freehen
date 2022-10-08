@@ -10,7 +10,7 @@
 
     <script src="JS/ficheros.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <link rel="stylesheet" href="CSS/estilos.css"/>
+    <link rel="stylesheet" href="CSS/estilos.css" />
     <script src="https://kit.fontawesome.com/1aced60473.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
@@ -21,18 +21,19 @@
 
 
     <header class="header2">
-        
+
         <img class="img2" src="images/GrayEggs2.png">
-        <p class="granja-maria" >GRANJA MARÍA</p>
+        <p class="granja-maria">GRANJA MARÍA</p>
         <p class="gallinas-felices">Gallinas felices</p>
-        
+
 
 
         <nav class="nav2">
-            
+
             <ul class="nav-menu2">
-                <li class="nav-menu-item-p2"><a href="index1.html" class="nav-menu-link nav-link2"> <i class="fa-solid fa-house"></i> &#160 Inicio</a></li>
-                                
+                <li class="nav-menu-item-p2"><a href="index1.html" class="nav-menu-link nav-link2"> <i
+                            class="fa-solid fa-house"></i> &#160 Inicio</a></li>
+
             </ul>
 
         </nav>
@@ -42,97 +43,98 @@
     <main>
 
 
-   
 
-    <div class="titulo-ppal">
-        <h1>ADMINISTRADOR DE CLIENTES Y VENTAS</h1>
-    </div>
 
-    <hr>
+        <div class="titulo-ppal">
+            <h1>ADMINISTRADOR DE CLIENTES Y VENTAS</h1>
+        </div>
 
-    <div class="titulo-formulario">
-        <h2>DATOS DE LA VENTA</h2>
-    </div> <br><br>
+        <hr>
 
-    <form class="contenedor-formulario-venta", id="form-venta">
-        <div class="hijo-formulario-venta">
-            <table>
-                <tr>
-                    <td>
-                        <div class="labels-form"></div>
-                        <label for="fecha"> Fecha: </label>
-                        <div class="boxes-form"></div>
-                        <input class="text-box" type="date" id="fecha" name="fecha" placeholder="Seleccione la fecha" required><br><br>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+        <div class="titulo-formulario">
+            <h2>DATOS DE LA VENTA</h2>
+        </div> <br><br>
 
-                    <td>
-                        <div class="labels-form">
-                            <label for="cantidad"> Cantidad: </label>
-                        </div>
-                        <div class="boxes-form">
-                            <input type="number" id="cantidad" name="cantidad" placeholder="Ingrese la cantidad"
-                                required><br><br>
-                        </div>
-                    </td>
+        <form class="contenedor-formulario-venta" , id="form-venta">
+            <div class="hijo-formulario-venta">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="labels-form"></div>
+                            <label for="fecha"> Fecha: </label>
+                            <div class="boxes-form"></div>
+                            <input class="text-box" type="date" id="fecha" name="fecha"
+                                placeholder="Seleccione la fecha" required><br><br>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
 
-                </tr>
-                <tr>
-                    <td>
-                        <div class="labels-form"></div>
-                        <label for="cliente"> Cliente: </label>
-                        <div class="boxes-form">
-                            <select  class="text-box" name="cliente" id="cliente">
-                                <option value="Seleccione el cliente" selected>Seleccione el cliente</option>
-                                <!-- <option value="Armando Espinosa">Armando Espinosa</option>
+                        <td>
+                            <div class="labels-form">
+                                <label for="cantidad"> Cantidad: </label>
+                            </div>
+                            <div class="boxes-form">
+                                <input type="number" id="cantidad" name="cantidad" placeholder="Ingrese la cantidad"
+                                    required><br><br>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="labels-form"></div>
+                            <label for="cliente"> Cliente: </label>
+                            <div class="boxes-form">
+                                <select class="text-box" name="cliente" id="cliente">
+                                    <option value="Seleccione el cliente" selected>Seleccione el cliente</option>
+                                    <!-- <option value="Armando Espinosa">Armando Espinosa</option>
                                 <option value="Andrés Ballesteros">Andrés Ballesteros</option> -->
 
 
-                                <script type="text/javascript">
-                                    var ListaClientes = ["Armando Espinosa 1", "Andrés Ballesteros", "Angela Chicaiza"];
-                                    for (let i = 0; i < ListaClientes.length; i++) {
-                                        nombre = ListaClientes[i];
-                                        document.write("<option>" + nombre + "</option>");
-                                    }
-                                </script>
-                                <option value="Crear nuevo cliente">Crear nuevo cliente</option>
+                                    <script type="text/javascript">
+                                        var ListaClientes = ["Armando Espinosa 1", "Andrés Ballesteros", "Angela Chicaiza"];
+                                        for (let i = 0; i < ListaClientes.length; i++) {
+                                            nombre = ListaClientes[i];
+                                            document.write("<option>" + nombre + "</option>");
+                                        }
+                                    </script>
+                                    <option value="Crear nuevo cliente">Crear nuevo cliente</option>
 
-                            </select> <br><br>
-                        </div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="labels-form"></div>
-                        <label for="valor-unitario"> Valor unitario: </label>
-                        <div class="boxes-form"></div>
-                        <input type="number" id="valor-unitario" name="valor unitario"
-                            placeholder="Ingrese el valor unitario" required><br><br>
+                                </select> <br><br>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div class="labels-form"></div>
+                            <label for="valor-unitario"> Valor unitario: </label>
+                            <div class="boxes-form"></div>
+                            <input type="number" id="valor-unitario" name="valor unitario"
+                                placeholder="Ingrese el valor unitario" required><br><br>
 
-                    </td>
+                        </td>
 
-                </tr>
-                <tr>
-                    <td>
-                        <div class="labels-form"></div>
-                        <label for="producto"> Producto: </label>
-                        <div class="boxes-form">
-                            </doiv>
-                            <select  class="text-box" name="Producto" id="Producto">
-                                <option value="Huevos" selected>Huevos</option>
-                                <option value="Gallinas">Gallinas</option>
-                            </select> <br><br>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="labels-form"></div>
+                            <label for="producto"> Producto: </label>
+                            <div class="boxes-form">
+                                </doiv>
+                                <select class="text-box" name="Producto" id="Producto">
+                                    <option value="Huevos" selected>Huevos</option>
+                                    <option value="Gallinas">Gallinas</option>
+                                </select> <br><br>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <!-- <td>
                         <div class="boxes-form"></div>
                         <label for="valor-total"> Valor total: </label>
                         <div class="boxes-form"></div>
@@ -141,52 +143,52 @@
 
 
                     </td> -->
-                </tr>
+                    </tr>
 
-                <table>
-        </div>
-        <div class="contenedor-buttons-form">
-            <div class="hijo-contenedor-buttons-form">
-                <table>
-                    <td>
-                        <div class="button-crear" id="button-crear">
-                            <p><button type="submit" onclick="getData()">Crear</button></p>
-
-                        </div>
-                    </td>
-                    <td></td>
-    
-                    <td>
-                        <div class="button-buscar" id="button-buscar">
-                            <button type="submit">Buscar</button>
-                        </div>
-                    </td>
-    
-                </table>
+                    <table>
             </div>
-        </div>
-    </form>
+            <div class="contenedor-buttons-form">
+                <div class="hijo-contenedor-buttons-form">
+                    <table>
+                        <td>
+                            <div class="button-crear" id="button-crear">
+                                <p><button type="submit" onclick="getData()">Crear</button></p>
 
+                            </div>
+                        </td>
+                        <td></td>
 
+                        <td>
+                            <div class="button-buscar" id="button-buscar">
+                                <button type="submit">Buscar</button>
+                            </div>
+                        </td>
 
-
-
-    <div class="overlay" id="overlay">
-        <div class="popup" id="popup">
-            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-            <h3>DATOS DEL CLIENTE</h3>
-            <form action="">
-                <div class="contenedor-inputs">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Celular">
+                    </table>
                 </div>
-                <input type="submit" class="btn-submit" value="Crear Cliente">
-            </form>
+            </div>
+        </form>
 
+
+
+
+
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                <h3>DATOS DEL CLIENTE</h3>
+                <form action="" id="crear-cliente">
+                    <div class="contenedor-inputs">
+                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Celular">
+                    </div>
+                    <input type="submit" class="btn-submit" value="Crear Cliente">
+                </form>
+
+
+            </div>
 
         </div>
-
-    </div>
 
 
 </body>

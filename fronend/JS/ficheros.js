@@ -1,28 +1,14 @@
+
+
+
 var getData = function () {
 
-    var cliente = document.getElementById("cliente").value,
-        fecha = document.getElementById("fecha").value,
-        cantidad = document.getElementById("cantidad").value,
-        ValorUnitario = document.getElementById("valor-unitario").value,
-        cliente = document.getElementById("cliente").value,
-        producto = document.getElementById("Producto").value,
-
-        overlay = document.getElementById('overlay'),
-        popup = document.getElementById('popup'),
-        btnCerrarPopup = document.getElementById('btn-cerrar-popup');
-
-
+    var cliente = document.getElementById("cliente").value;
 
     if (cliente === "Crear nuevo cliente") {
 
         overlay.classList.add('active');
         popup.classList.add('active');
-
-    } else {
-
-        var valorTotal = cantidad * ValorUnitario;
-        //console.log(fecha + " " + cantidad + " " + ValorUnitario + " " + cliente + " " + producto + " " + valorTotal)
-        window.alert("Venta Creada con Exito, Valor Total: $" + valorTotal + " para " + cliente);
 
     }
 
@@ -99,14 +85,6 @@ let myChart = new Chart(ctx, {
             },
         },
     },
-})*/ 
+})*/
 
 
-var totalventas = 100;
-var totalingresos = 70000;
-
-function totalv(){
-    document.write(totalventas);}
-
-function totali(){
-document.write(totalingresos);}
