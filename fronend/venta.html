@@ -55,6 +55,7 @@
     </div> <br><br>
 
     <form class="contenedor-formulario-venta", id="form-venta">
+        <input type="hidden" name="id" value="0">
         <div class="hijo-formulario-venta">
             <table>
                 <tr>
@@ -109,9 +110,9 @@
                     <td></td>
                     <td>
                         <div class="labels-form"></div>
-                        <label for="valor-unitario"> Valor unitario: </label>
+                        <label for="valorunitario"> Valor unitario: </label>
                         <div class="boxes-form"></div>
-                        <input type="number" id="valor-unitario" name="valor unitario"
+                        <input type="number" id="valorunitario" name="valor unitario"
                             placeholder="Ingrese el valor unitario" required><br><br>
 
                     </td>
@@ -123,7 +124,7 @@
                         <label for="producto"> Producto: </label>
                         <div class="boxes-form">
                             </doiv>
-                            <select  class="text-box" name="Producto" id="Producto">
+                            <select  class="text-box" name="Producto" id="producto">
                                 <option value="Huevos" selected>Huevos</option>
                                 <option value="Gallinas">Gallinas</option>
                             </select> <br><br>
@@ -134,9 +135,9 @@
                     <td></td>
                     <!-- <td>
                         <div class="boxes-form"></div>
-                        <label for="valor-total"> Valor total: </label>
+                        <label for="valortotal"> Valor total: </label>
                         <div class="boxes-form"></div>
-                        <input type="number" id="valor-total" name="valor total"
+                        <input type="number" id="valortotal" name="valor total"
                             placeholder="Aquí verá el valor total"><br><br>
 
 
@@ -166,6 +167,18 @@
             </div>
         </div>
     </form>
+
+    <table>
+        <thead>
+            <th>Fecha</th>
+            <th>Cliente</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Valor unitario</th>
+            <th>Valor total</th>
+        </thead>
+        <tbody></tbody>
+    </table>
 
 
 

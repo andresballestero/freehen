@@ -3,7 +3,7 @@ var getData = function () {
     var cliente = document.getElementById("cliente").value,
         fecha = document.getElementById("fecha").value,
         cantidad = document.getElementById("cantidad").value,
-        ValorUnitario = document.getElementById("valor-unitario").value,
+        ValorUnitario = document.getElementById("valorunitario").value,
         cliente = document.getElementById("cliente").value,
         producto = document.getElementById("Producto").value,
 
