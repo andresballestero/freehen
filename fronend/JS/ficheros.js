@@ -99,14 +99,16 @@ let myChart = new Chart(ctx, {
             },
         },
     },
-})*/ 
+})*/
 
 
 var totalventas = 100;
 var totalingresos = 70000;
 
-function totalv(){
-    document.write(totalventas);}
+function totalv() {
+    document.write(totalventas);
+}
 
-function totali(){
-document.write(totalingresos);}
+function totali() {
+    document.write(totalingresos);
+}

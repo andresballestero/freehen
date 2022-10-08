@@ -14,7 +14,7 @@ class Entity {
         }).then(response => response.json().then(response.ok ? fullfill : reject, reject), reject));
     }
 
-    finAll() {
+    findAll() {
         return new Promise((fullfill, reject) => fetch(this.url + this.endpoint, {
             headers: { "content-type": "application/json" },
             method: "GET",
@@ -23,7 +23,7 @@ class Entity {
         }))
     }
 
-    finById(id) {
+    findById(id) {
         return new Promise((fullfill, reject) => fetch(this.url + this.endpoint + id, {
             headers: { "content-type": "application/json" },
             method: "GET",
